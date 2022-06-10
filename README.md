@@ -51,4 +51,18 @@ const getMovie = async () => {
   }, [])
 ```
 
+### Prop-Types Lib
+
+- prop-types를 지정하여 필수로 받아야하는 props 지정
+
+```js
+Movie.prototype = {
+  id: PropTypes.number.isRequired,
+  coverImage: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  summary: PropTypes.string.isRequired,
+  year: PropTypes.number.isRequired,
+  genres: PropTypes.arrayOf(PropTypes.string),
+}
+```
 
